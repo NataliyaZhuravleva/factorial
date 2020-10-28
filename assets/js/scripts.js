@@ -24,8 +24,8 @@ $(document).ready(function () {
     const input = parseInt($("#input").val());
     if (input && input>=0) {
       let result = factorial1(input);
-      alert(result);
-      
+      //alert(result);
+      $("#result").show().append(" "+ result);
     } else {
       $("#warning").show();
     }
