@@ -5,13 +5,13 @@ function factorial1(n) {
   if (n == 0) {
     return 1;
   } else
-  n * factorial1(n - 1);
+  return n * factorial1(n - 1);
 }
 
 // User interface logic:
 
 $(document).ready(function () {
-  $("button#factorial").click(function () {
+  $("button#factorial").click(function (event) {
     
     // let n = 5;
     // let factorial = n;
@@ -26,7 +26,7 @@ $(document).ready(function () {
     alert(result);
     
     //
-   // event.preventDefault();
+    event.preventDefault();
   });
 
 
